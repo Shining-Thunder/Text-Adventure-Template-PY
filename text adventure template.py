@@ -250,7 +250,7 @@ def battle(name, ehp, edef, eatk, emp, expgain, goldgain, isboss):
                 time.sleep(1)
                 print("You lost half your health")
                 hp -= hp / 2
-                hp = int(hp)
+                hp = round(hp)
                 ehp = 0
             else:
                 print("You can't run from a boss!")
